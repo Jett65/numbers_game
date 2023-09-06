@@ -21,8 +21,9 @@ the numbers P2 inputted at the end the player with the highest decimal number wi
 package main
 
 import (
+	"fmt"
 	"math/rand"
-    "fmt"
+    "golang.org/x/exp/slices"
 )
 
 // Generates a random number in the range of min and max
@@ -30,9 +31,6 @@ func randint(min int, max int) int {
 	var randint int = rand.Intn(max-min+1) + min
 	return randint
 }
-
-// Compars
-func checGrator()
 
 func main() {
 	var player1_nums [5]int
@@ -46,11 +44,4 @@ func main() {
 
 	// Temp
 	// In version 1 will be inputted by the user
-    p1_in := [5]int {0, 1, 2, 3, 4} 
-    p2_in := [5]int {0, 1, 2, 3, 4}  
-    fmt.Printf("p1_in: %v, p2_in: %v\n", p1_in, p2_in)
-
-    
 }
-
-
